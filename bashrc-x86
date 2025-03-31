@@ -1,0 +1,12 @@
+vkwall=$(pwd)
+export WORKON_HOME=$vkwall/env-x86/
+export PROJECT_HOME=$vkwall/
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
+export VIRTUALENVWRAPPER_VIRTUALENV=/usr/bin/virtualenv
+# export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
+export PIP_VIRTUALENV_BASE=$WORKON_HOME
+export PIP_RESPECT_VIRTUALENV=true
+# sudo ln -s /usr/share/virtualenvwrapper/virtualenvwrapper.sh /usr/local/sbin/virtualenvwrapper.sh
+source /usr/local/sbin/virtualenvwrapper.sh
+# Раньше была следующая строка, но файл переместили и закрыли доступ. Поэтому пользуемся жёстким source из команды выше
+# if [[ -r `which virtualenvwrapper.sh` ]]; then source `which virtualenvwrapper.sh`; fi

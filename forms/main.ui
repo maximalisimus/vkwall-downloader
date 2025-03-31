@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>main_form</class>
+ <widget class="QWidget" name="main_form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>609</width>
+    <height>580</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>608</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1024</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Arial</family>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>ВК Сохранение стены</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../image/vk-icon.png</normaloff>../image/vk-icon.png</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="17" column="0" colspan="2">
+    <widget class="QPushButton" name="savefile_button">
+     <property name="text">
+      <string>Сохранить в файл</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../image/save.png</normaloff>../image/save.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="19" column="0" colspan="3">
+    <widget class="QPushButton" name="resetconf_button">
+     <property name="text">
+      <string>Сброс параметров запросов</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../image/clear.png</normaloff>../image/clear.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="18" column="2" colspan="4">
+    <widget class="QPushButton" name="clear_button">
+     <property name="text">
+      <string>Очистка</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../image/clear.png</normaloff>../image/clear.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="6" rowspan="2" colspan="2">
+    <widget class="QPushButton" name="selectdir_button">
+     <property name="text">
+      <string>Выбрать папку</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../image/folder.png</normaloff>../image/folder.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1" rowspan="2" colspan="5">
+    <widget class="QLineEdit" name="downloaddir_text">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+padding: 5px;</string>
+     </property>
+     <property name="text">
+      <string>./download</string>
+     </property>
+    </widget>
+   </item>
+   <item row="21" column="6" colspan="2">
+    <widget class="QPushButton" name="download_button">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="text">
+      <string>Скачать данные</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../image/download.png</normaloff>../image/download.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="0">
+    <widget class="QLabel" name="datastop_label">
+     <property name="text">
+      <string>Конечная дата:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="6">
+    <widget class="QPushButton" name="view_button">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../image/view.png</normaloff>../image/view.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="16" column="2" colspan="4">
+    <widget class="QPushButton" name="refresh_button">
+     <property name="text">
+      <string>Перезагрузить</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../image/refresh.png</normaloff>../image/refresh.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="20" column="0" colspan="8">
+    <widget class="Line" name="line_3">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="token_label">
+     <property name="text">
+      <string>Токен:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1" colspan="5">
+    <widget class="QLineEdit" name="token_text">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+padding: 5px;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="15" column="0" colspan="8">
+    <widget class="Line" name="line_4">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1" colspan="5">
+    <widget class="QLineEdit" name="domain_text">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+padding: 5px;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1" colspan="5">
+    <widget class="QLineEdit" name="ownerid_text">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+padding: 5px;</string>
+     </property>
+     <property name="inputMask">
+      <string/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="7">
+    <widget class="QPushButton" name="help_button">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../image/help.png</normaloff>../image/help.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0" rowspan="2">
+    <widget class="QLabel" name="downloaddir_label">
+     <property name="text">
+      <string>Загрузка:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="18" column="0" colspan="2">
+    <widget class="QPushButton" name="allclear_button">
+     <property name="text">
+      <string>Полная очистка</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../image/clear.png</normaloff>../image/clear.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="domain_label">
+     <property name="text">
+      <string>Домен группы:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="16" column="0" colspan="2">
+    <widget class="QPushButton" name="delete_button">
+     <property name="text">
+      <string>Удалить</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../image/delete.png</normaloff>../image/delete.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="1" colspan="3">
+    <widget class="QCheckBox" name="saveurl_checker">
+     <property name="text">
+      <string>Сохранить URL запроса</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="18" column="6" colspan="2">
+    <widget class="QPushButton" name="saveconf_button">
+     <property name="text">
+      <string>Сохранить</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../image/saveconf.png</normaloff>../image/saveconf.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="0" rowspan="2" colspan="8">
+    <widget class="Line" name="line_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="16" column="6" colspan="2">
+    <widget class="QPushButton" name="apply_button">
+     <property name="text">
+      <string>Применить</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../image/uses.png</normaloff>../image/uses.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="17" column="2" colspan="4">
+    <widget class="QPushButton" name="loadfile_button">
+     <property name="text">
+      <string>Загрузить из файла</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../image/load.png</normaloff>../image/load.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="1" colspan="5">
+    <widget class="QLineEdit" name="datastop_text">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+padding: 5px;</string>
+     </property>
+     <property name="inputMask">
+      <string>00.00.2000</string>
+     </property>
+     <property name="text">
+      <string>..2</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="0">
+    <widget class="QLabel" name="count_posts_label">
+     <property name="text">
+      <string>Кол-во постов:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="0">
+    <widget class="QCheckBox" name="resized_checker">
+     <property name="text">
+      <string>Уменшать фото</string>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="1" colspan="5">
+    <widget class="QLineEdit" name="offset_text">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+padding: 5px;</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+   </item>
+   <item row="17" column="6" colspan="2">
+    <widget class="QPushButton" name="loadconf_button">
+     <property name="text">
+      <string>Загрузить</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../image/upload.png</normaloff>../image/upload.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="22" column="0" colspan="8">
+    <widget class="QProgressBar" name="progress_bar">
+     <property name="value">
+      <number>0</number>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0" colspan="8">
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="4" colspan="4">
+    <widget class="QPushButton" name="opendir_button">
+     <property name="text">
+      <string>Открыть папку загрузок</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../image/folder.png</normaloff>../image/folder.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="1" colspan="5">
+    <widget class="QLineEdit" name="count_posts_text">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+padding: 5px;</string>
+     </property>
+     <property name="text">
+      <string>10</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="0">
+    <widget class="QLabel" name="offset_label">
+     <property name="text">
+      <string>Смещение:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="ownerid_label">
+     <property name="text">
+      <string>ownerid:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="version_label">
+     <property name="text">
+      <string>Версия ВК API:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" colspan="5">
+    <widget class="QLineEdit" name="version_text">
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+padding: 5px;</string>
+     </property>
+     <property name="inputMask">
+      <string>0.000</string>
+     </property>
+     <property name="text">
+      <string>5.236</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="6" colspan="2">
+    <widget class="QPushButton" name="version_button">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../image/help.png</normaloff>../image/help.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="21" column="0" colspan="2">
+    <widget class="QPushButton" name="receive_data_button">
+     <property name="text">
+      <string>Запросить за дату</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../image/receive.png</normaloff>../image/receive.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="21" column="2" colspan="4">
+    <widget class="QPushButton" name="receive_button">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="text">
+      <string>Запросить до даты</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../image/receive.png</normaloff>../image/receive.png</iconset>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

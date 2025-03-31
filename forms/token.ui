@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>token_form</class>
+ <widget class="QWidget" name="token_form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>512</width>
+    <height>360</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>480</width>
+    <height>360</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1024</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>480</width>
+    <height>360</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Arial</family>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Информация о токене безопасности</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../image/vk-icon.png</normaloff>../image/vk-icon.png</iconset>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="text_label">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>296</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;VK token (ВК токен)&lt;/span&gt; необходим для аутентификации и авторизации при работе с &lt;span style=&quot; text-decoration: underline;&quot;&gt;API&lt;/span&gt; социальной сети &lt;span style=&quot; text-decoration: underline;&quot;&gt;ВКонтакте&lt;/span&gt;. С его помощью приложения получают доступ к различным функциям и данным социальной сети, таким как получение информации о профиле, отправка сообщений, управление сообществами и многим другим функциям.&lt;/p&gt;&lt;p&gt;В данном приложении токен нужен только для того, чтобы скачивать данные с указанной группы &lt;span style=&quot; text-decoration: underline;&quot;&gt;ВКонтакте&lt;/span&gt; или со стены указанного человека.&lt;/p&gt;&lt;p&gt;Чтобы получить &lt;span style=&quot; font-weight:600;&quot;&gt;VK token&lt;/span&gt; необходимо добавить новое приложение в &lt;span style=&quot; text-decoration: underline;&quot;&gt;API&lt;/span&gt; настройках вашего аккаунта, т.е. в настройках для разработчиков.Для этого нажмите кнопку «Перейти в настройку» и добавьте новое приложение. Полученный токен вставьте в соответствующее поле в предыдущем окне программы.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="button_prev">
+       <property name="text">
+        <string>Назад</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../image/prev.png</normaloff>../image/prev.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="button_next">
+       <property name="text">
+        <string>Перейти в настройку</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../image/next.png</normaloff>../image/next.png</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="resourses.qrc"/>
+ </resources>
+ <connections/>
+</ui>

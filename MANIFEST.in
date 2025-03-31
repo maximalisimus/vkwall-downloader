@@ -1,0 +1,9 @@
+recursive-include forms/ *.ui
+recursive-include image/ *.png
+recursive-include image/ *.svg
+recursive-include image/ *.ico
+recursive-include pyvkwall/ *.py
+include Makefile
+include LICENSE
+include CHANGELOG.txt
+include README.md

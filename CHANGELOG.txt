@@ -1,0 +1,5 @@
+-----
+06.03.2025 - 19:00 GMT +3
+pyvkwallt 1.0.0:
+* Basic stable version.
+-----
