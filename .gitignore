@@ -134,8 +134,6 @@ dmypy.json
 forms/designer
 *.bat
 bashrc
-bashrc-x64
-bashrc-x86
 .bashrc
 bashrc.sh
 *.backup
